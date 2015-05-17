@@ -28,6 +28,12 @@ public class FragmentMapDetail extends MapFragment {
         View view = super.onCreateView(inflater, container, savedInstanceState);
         GoogleMap map= getMap();
         String monumentId= ((MonumentsActivity) getActivity()).getCurrentMonumentId();
+
+        // If monumentId is null the
+        if(monumentId != null){
+
+        }
+
         Monument currentMonument= MonumentList.getMonument(monumentId);
         LatLng latLng= currentMonument.getLatLng();
         Marker marker = map.addMarker(new MarkerOptions().position(latLng)

@@ -2,34 +2,302 @@
 <resources>
 
     <string name="app_name">Capture the City</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="action_settings">Settings</string>
     <string name="share">share</string>
     <string name="capture">capture</string>
-
-    <string name="standard">Standard</string>
-    <string name="ffc">Front-Facing</string>
-    <string name="record">Record Video</string>
-    <string name="stop">Stop</string>
-    <string name="lock_to_landscape">Lock to Landscape</string>
-    <string name="launch_camera_app">Launch Camera App</string>
-    <string name="take_picture">Take Picture</string>
-    <string name="auto_focus">Auto-focus</string>
-    <string name="single_shot_mode">Single-Shot Mode</string>
-    <string name="no_image">There was no image to show!</string>
-    <string name="show_zoom">Show Zoom</string>
-    <string name="flash">Flash</string>
-    <string name="launch_full_screen">Launch Full-Screen</string>
-    <string name="mirror_ffc">Mirror FFC</string>
-
     <string name="congratulations">Congratulations!!</string>
     <string name="captured_msg">You have captured </string>
-
     <string name="tab_monuments">Monuments</string>
     <string name="tab_monument">Monument</string>
     <string name="tab_map">Map</string>
     <string name="ok">Ok</string>
+
+    <string name="see_more">Capture the monument to see more</string>
+
+    <string name="title_fuente_cibeles">Fuente de Cibeles</string>
+    <string name="title_puerta_alcala">Puerta de Alcalá</string>
+    <string name="title_calle_alcala">Calle de Alcalá</string>
+    <string name="title_cat_almudena">C. de la Almudena</string>
+    <string name="title_templo_debod">Templo de Debod</string>
+    <string name="title_palacio_real">Palacio Real</string>
+    <string name="title_plaza_mayor">Plaza mayor</string>
+    <string name="title_retiro">Parque del Retiro</string>
+    <string name="title_sol">Puerta del Sol</string>
+    <string name="title_palacion_com">P. de Comunicaciones</string>
+    <string name="title_teatro">Teatro Real</string>
+    <string name="title_teleferico">Teleférico</string>
+
+    <string name="calle_alacala" formatted="false" >Calle de Alcalá is the longest street in Madrid. It starts at the
+        Puerta del Sol and goes on for 10.5 km, to the northeastern outskirts of the city. Henry
+        David Inglis described it in 1837 as \"long, of superb width, and flanked by a splendid
+        range of unequal buildings\".
+
+        \n\nCalle de Alcalá is one of the oldest streets in the city. It was the old road which led
+        to the city of Alcalá de Henares (from which it takes the name) and continued to Aragón;
+        today, this route is covered by the A-2 motorway. Along this street
+        it is possible to find landmarks such as Banco Bilbao Vizcaya at number 16, the former
+        Alcalá 20 discothèque at number 20, Edificio Metrópolis, the Unión y el Fénix Español
+        building at number 23, Círculo de Bellas Artes, Plaza de Cibeles, Puerta de Alcalá,
+        the Spanish Ministry of Education, the Instituto Cervantes HQ building,
+        the Bank of Spain building, Parque del Buen Retiro and Plaza de Toros de Las Ventas.</string>
+
+    <string name="catedral_almudena" formatted="false">  Santa María la Real de La Almudena is the
+        Catholic cathedral in Madrid, the seat of the Roman Catholic Archdiocese of Madrid. It was
+        consecrated by Pope John Paul II in 1993.
+
+        \n\nWhen the capital of Spain was transferred from Toledo to Madrid in 1561, the seat of the
+        Church in Spain remained in Toledo and the new capital had no cathedral. Plans to build a
+        cathedral in Madrid dedicated to the Virgin of Almudena were discussed as early as the 16th
+        century but even though Spain built more than 40 cities in the new world during that century
+        and plenty of Cathedrals, the cost of expanding and keeping the Empire came first and the
+        construction of Madrid\'s cathedral was postponed. Making the cathedral the largest that the
+        world had ever seen was then a priority, all other main Spanish cities had centuries old
+        Cathedrals, Madrid also has old churches but the construction of Almudena only began in 1879.
+
+        \n\nThe cathedral seems to have been built on the site of a medieval mosque that was destroyed
+        in 1083 when Alfonso VI reconquered Madrid. Francisco de Cubas, the Marquis of Cubas, designed
+        and directed the construction in a Gothic revival style. Construction ceased completely during
+        the Spanish Civil War, and the project was abandoned until 1950, when Fernando Chueca Goitia
+        adapted the plans of de Cubas to a baroque exterior to match the grey and white façade of
+        the Palacio Real, which stands directly opposite. The cathedral was not completed until 1993,
+        when it was consecrated by Pope John Paul II. On May 22, 2004, the marriage of King Felipe VI,
+        then crown prince, to Letizia Ortiz Rocasolano took place at the cathedral.
+
+        \n\nThe Neo-Gothic interior is uniquely modern, with chapels and statues of contemporary artists,
+        in heretogeneous styles, from historical revivals to "pop-art" decor. The Blessed Sacrament
+        Chapel features mosaic from known artist Fr. Marko Ivan Rupnik.
+        </string>
+
+    <string name="fuente_cibeles">The fountain of Cibeles is a neo-classical complex of
+        marble sculptures with fountains that has become an iconic symbol for the city of Madrid.
+        It sits at the intersection of Calle de Alcalá (running from east to west), Paseo de Recoletos
+        (to the North) and Paseo del Prado (to the south). Plaza de Cibeles was originally named
+        Plaza de Madrid, but in 1900, the City Council named it Plaza de Castelar, which was
+        eventually replaced by its current name.
+
+        \n\nIt is currently delimited by four prominent buildings: The Bank of Spain, the Palacio de
+        Buenavista, the Palacio de Linares and the Cybele Palace. These constructions are located in
+        four different neighbourhoods from three different adjacent districts: Centro, Retiro and
+        Salamanca.
+
+        \n\nIn the years Cybele Palace and her fountain have become symbolic monuments of the city.</string>
+
+    <string name="puerta_alcala">The Puerta de Alcalá ("Alcalá Gate") is a Neo-classical monument in
+        the Plaza de la Independencia in Madrid, Spain. It stands near the city center and several
+        meters away from the main entrance to the Parque del Buen Retiro. The square is bisected by
+        Alcalá Street, although the street does not cross through the monument, and it is the origin
+        of the Alfonso XII, Serrano and Olózaga streets. Its name originates from the old path from
+        Madrid to the nearby town of Alcalá de Henares.
+
+        \n\nMadrid in the late 18th century, still remained a somewhat drab villa in appearance,
+        surrounded by medieval walls. Around the year 1774, king Charles III commissioned Francesco
+        Sabatini to construct a monumental gate in the city wall through which an expanded road to
+        the city of Alcalá was to pass, replacing an older, smaller, gate which stood nearby.
+        It was inaugurated in 1778.</string>
+    <string name="templo_debod">
+        The Temple of Debod (Spanish: Templo de Debod) is an ancient Egyptian temple which was
+        dismantled and rebuilt in Madrid, Spain.
+
+        \n\nThe temple was built originally 15 kilometres (9.3 mi) south of Aswan in southern Egypt very
+        close to the first cataract of the Nile and to the great religious center dedicated to the
+        goddess Isis, in Philae. In the early 2nd century BC, Adikhalamani (Tabriqo), the Kushite king
+        of Meroë, started its construction by building a small single room chapel dedicated to the
+        god Amun. It was built and decorated on a similar design to the later Meroitic chapel on which
+        the Temple of Dakka is based. Later, during the reigns of Ptolemy VI, Ptolemy VIII and
+        Ptolemy XII of the Ptolemaic dynasty, it was extended on all four sides to form a small temple,
+        12 by 15 metres, which was dedicated to Isis of Philae. The Roman emperors Augustus and
+        Tiberius completed its decorations.
+
+        \n\nFrom the quay there is a long processional way leading to the stone-built enclosure wall,
+        through three stone pylon gateways and finally to the temple itself. The pronaos, which had
+        four columns with composite capitals collapsed in 1868, and is now lost. Behind it lay the
+        original sanctuary of Amun, the offering table room and a later sanctuary with several
+        side-rooms and stairs to the roof.
+
+        \n\nIn 1960, due to the construction of the Aswan High Dam and the consequent threat posed by
+        its reservoir to numerous monuments and archeological sites, UNESCO made an international
+        call to save this rich historical legacy. As a sign of gratitude for the help provided by
+        Spain in saving the temples of Abu Simbel, the Egyptian state donated the temple of Debod
+        to Spain in 1968.
+
+        \n\nThe temple was rebuilt in one of Madrid\'s parks, the Parque del Oeste, near the Royal Palace
+        of Madrid, and opened to the public in 1972. The reassembled gateways appear to have been
+        placed in a different order than when originally erected. Compared to a photo of the
+        original site, the gateway topped by a serpent flanked sun appears not to have been the
+        closest gateway to the temple proper. It constitutes one of the few works of ancient
+        Egyptian architecture which can be seen outside Egypt and the only one of its kind in Spain.
+    </string>
+
+    <string name="palacio_real">
+        The Palacio Real de Madrid (literally: Royal Palace of Madrid) is the official residence of
+        the Spanish Royal Family at the city of Madrid, but is only used for state ceremonies. King
+        Felipe VI and the Royal Family do not reside in the palace, choosing instead the more modest
+        Palacio de la Zarzuela on the outskirts of Madrid. The palace is owned by the Spanish State
+        and administered by the Patrimonio Nacional, a public agency of the Ministry of the Presidency.
+        The palace is located on Calle de Bailén (Bailén Street), in the Western part of downtown Madrid,
+        East of the Manzanares River, and is accessible from the Ópera metro station. Several rooms
+        in the palace are regularly open to the public except during state functions. An admission
+        fee of €12 is required except for residents of the Iberian Peninsula.
+
+        \n\nThe palace is on the site of a 9th-century fortress, called mayrit, constructed as an outpost
+        by Muhammad I of Córdoba and inherited after 1036 by the independent Moorish Taifa of Toledo.
+        After Madrid fell to Alfonso VI of Castile in 1083, the edifice was only rarely used by the
+        kings of Castile. In 1329, King Alfonso XI of Castile convened the cortes of Madrid for the
+        first time. Philip II moved his court to Madrid in 1561.
+
+        \n\nThe old Alcázar ("Castle") was built on the location in the 16th century. It burned 24
+        December 1734 and King Philip V ordered a new palace built on the same site. Construction
+        spanned the years 1738 to 1755[2] and followed a Berniniesque design by Filippo Juvarra and
+        Giovanni Battista Sacchetti in cooperation with Ventura Rodríguez, Francesco Sabatini, and
+        Martín Sarmiento. Charles III first occupied the new palace in 1764.
+
+        \n\nThe last monarch who lived continuously in the palace was Alfonso XIII, although Manuel Azaña,
+        president of the Second Republic, also inhabited it, making him the last head of state to do
+        so. During that period the palace was known as "Palacio Nacional". There is still a room next
+        to the Real Capilla, which is known by the name "Office of Azaña".
+
+        \n\nThe palace has 135,000 square metres (1,450,000 sq ft) of floorspace and contains 3,418 rooms.
+        It is the largest palace in Europe by floor area. The interior of the palace is notable for
+        its wealth of art and the use of many types of fine materials in the construction and the
+        decoration of its rooms. These include paintings by artists such as Caravaggio, Velázquez
+        and Francisco de Goya and frescoes by Corrado Giaquinto, Juan de Flandes, Giovanni Battista
+        Tiepolo and Anton Raphael Mengs. Other collections of great historical and artistic importance
+        preserved in the building include the Royal Armoury of Madrid, Porcelain, Watches, Furniture,
+        Silverware and the world\'s only complete Stradivarius string quintet.
+    </string>
+
+    <string name="plaza_mayor">
+        The Plaza Mayor was built during Philip III\'s reign (1598–1621) and is a central plaza in
+        the city of Madrid, Spain. It is located only a few Spanish blocks away from another famous
+        plaza, the Puerta del Sol. The Plaza Mayor is rectangular in shape, measuring 129 m × 94 m,
+        and is surrounded by three-story residential buildings having 237 balconies facing the Plaza.
+        It has a total of nine entranceways. The Casa de la Panadería (Bakery House), serving municipal
+        and cultural functions, dominates the Plaza Mayor.
+
+        \n\nThe origins of the Plaza go back to 1577 when Philip II asked Juan de Herrera, a renowned
+        Classical architect, to discuss a plan to remodel the busy and chaotic area of the old Plaza
+        del Arrabal. Juan de Herrera was the artist who designed the first project in 1560 to remodel
+        the old Plaza del Arrabal but construction did not start until 1617, during Philip III\'s
+        reign. The king asked Juan Gómez de Mora to continue with the project, and he finished the
+        porticoes in 1619. Nevertheless, the Plaza Mayor as we know it today is the work of the
+        architect Juan de Villanueva who was given the glorious, albeit difficult task of its
+        reconstruction in 1790 after a series of enormous fires. Giambologna\'s equestrian statue of
+        Philip III dates to 1616, but it was not placed in the centre of the square until 1848.
+
+    </string>
+
+    <string name="retiro">
+        In 1505, at the time of Isabella I (r. 1474–1504) the Jeronimos monastery was moved from an
+        unsuitable location elsewhere to the present site of San Jeronimo el Real Church, and a new
+        monastery built in Isabelline Gothic style. The royal family had a retreat built as part of
+        the church.
+
+        \n\nKing Philip II (r. 1556–1598) moved the Spanish court to Madrid in 1561. Philip had the Retiro
+        enlarged by his architect Juan Bautista de Toledo, and formal avenues of trees were laid out.
+
+        \n\nThe gardens were extended in the 1620s, when Gaspar de Guzmán, Count-Duke of Olivares, Philip
+        IV\'s powerful favourite, gave the king several tracts of land in the vicinity for the Court\'s
+        recreational use. Olivares determined to build, in a place that the king liked, a royal house
+        which should be superior to those villas that Roman nobles had been setting up in the hilly
+        outskirts of Rome during the previous century. Although this second royal residence was to
+        be built in what were then outlying areas of Madrid, it was actually not far from the existing
+        Alcázar or fortress residence, and the location in a cool, wooded area proved to be ideal.
+
+        \n\nIn the 1630s, under the supervision of architects Giovanni Battista Crescenzi and Alonso
+        Carbonell, several building were erected in great haste, two of which are still standing:
+        the "Casón del Buen Retiro" which served as a ballroom, and the building that housed the
+        military museum, the Museo del Ejército, which includes the grand entrance hall, the "Salón
+        de Reinos" (Hall of Kingdoms), its wall decorated with paintings by Velázquez and Zurbarán
+        and frescoes by Luca Giordano.
+
+        \n\nThe Count-Duke of Olivares commissioned the park in the 1630s, worked on by Cosimo Lotti,
+        a garden designer who had worked under Bernardo Buontalenti on the layout of the Boboli
+        Gardens for Cosimo I, Grand Duke of Tuscany. Water was a distinguishing trait of the garden
+        from the outset: the great pond, Estanque del Retiro, which served as the setting for mock
+        naval battles and other aquatic displays, the great canal, the narrow channel, the chamfered
+        or bellflower pond, created —along with the chapels— the basic layout of the gardens. Buen
+        Retiro was described as "The world art wonder of the time", probably the last great creation
+        of the Renaissance in Spain. Buen Retiro became the center of Habsburg court life at a time
+        when Spain was the foremost power in the world. During the reigns of Philip IV and Charles
+        II several magnificent plays were performed in the park for the royal family and the court.
+
+        \n\nThe gardens were neglected after the death of Philip IV in 1665, but have been restored
+        and changed on many occasions, notably after being opened to the public in 1767 and becoming
+        the property of the municipality in 1868.
+
+        \n\nPhilip V (1700–1746) ordered the creation of a parterre, the only French-style garden in the
+        complex. During the reign of Ferdinand VI, Buen Retiro was the setting for magnificent Italian
+        operas. Charles III (1759–1788) saw to the beautification of its perimeter, replacing the old
+        walls with elegant wrought-iron railings. Juan de Villanueva\'s Astronomical Observatory was
+        built during the reign of Charles IV (1788–1808).
+
+        \n\nThe Buen Retiro Palace was used until the era of Charles III. Most of the palace was destroyed
+        during the Peninsular War (1807–1814) with the First French Empire.
+
+        \n\nThe reign of Queen Isabella II saw profound changes in the "Retiro". During the queen\'s minority,
+        the gardens enjoyed a particularly prosperous period, with the planting of shade and fruit
+        trees, and previously unplanted areas like the "Campo Grande", were landscaped as well. The
+        gardens eventually passed to public ownership in 1868, at the time of the overthrow of Queen
+        Isabella. In 1883 it hosted the Exposición Nacional de Minería.
+    </string>
+    <string name="sol">
+        The Puerta del Sol originated as one of the gates in the city wall that surrounded Madrid in
+        the 15th century. Outside the wall, medieval suburbs began to grow around the Christian Wall
+        of the 12th century. The name of the gate came from the rising sun which decorated the entry,
+        since the gate was oriented to the east.
+
+        Between the 17th and 19th centuries, the area was an important meeting place: as the goal for
+        the couriers coming from abroad and other parts of Spain to the Post Office, it was visited
+        by those eager for the latest news. The stairs to the Saint Philip church at the square were
+        known as the Gradas de San Felipe, and were among the most prolific mentideros de la Corte
+        (this Spanish idiom sounds as "lie-spreaders of the Court", but it is related with the verb
+        mentar, "to say about someone", not mentir, "to lie", so it is more appropriately translated
+        as "places of the City where people buzz about other people").
+
+        The House of the Post Office was built by French Architect Jacques Marquet between 1766 and
+        1768. The building was the headquarters of the Ministry of Interior and State Security during
+        the Francisco Franco dictatorship. It is currently the seat of the Presidency of the
+        Madrid Community.
+    </string>
+    <string name="palacio_comunicaciones">
+        The current City Hall of Madrid is the Communications Palace ("Palacio de las Comunicaciones"
+        in spanish). It is a magnificent building situated along the south side of the Cibeles Square.
+        In 2007 the building was transformed into the new home of Madrid\'s city council. Even though
+        Madrid\'s city hall looks like a high-gothic cathedral, it was originally built in the early
+        20th century as the main office of the Spanish postal service, hence its name Communications
+        Palace. It continued to serve that purpose for about a century until November 2007 when it
+        took over the function of city hall from the much less impressive "Casa de la Villa" at the
+        Plaza de la Villa Square. Its architecture is a combination of the gothic style with neoclassical
+        elements. The building\'s facade is elaborately decorated with cartouches and pilasters.
+        Long pinnacles adorn the top of the towers, the tallest of which reaches a height of about
+        40 meter.</string>
+    <string name="teatro">
+        Teatro Real (Royal Theatre) or simply El Real, as it is known colloquially, is a major opera
+        house located in Madrid, Spain. Opened on 19 November 1850, it closed in 1925 and
+        reopened in 1997 with a capacity of 1,746 seats. Today, the Teatro Real opera is one of the
+        great theaters of Europe and its seasons are home productions involving leading figures of
+        the international singing, musical direction, stage direction and dance. The theater also
+        offers guided tours in several languages, including the auditorium, stage, workshops and
+        rehearsal rooms.
+    </string>
+    <string name="teleferico">
+        If you want to see Madrid from a bird\'s eye view, take the cable car ("Teleférico de Madrid"),
+        Madrid’s most unique tourist attraction, and dates back to 1969.
+
+        \n\nThe journey starts on the Paseo del Pintor Rosales street, near the Argüelles Metro station,
+        and takes you over the River Manzanares and into the Casa de Campo park. The cable car carries
+        you above the city\'s parks and the Manzanares River in the distance, as a recorded commentary
+        describes what you are looking at.
+
+        \n\nYou\'ll be seeing attractions such as the Plaza de España and the Egyptian temple of Debod
+        from a completely different perspective, as well as taking photos from several other angles.
+
+        \n\nMany of the city\'s famous sights may be seen, such as the Parque del Oeste Park with La
+        Rosaleda (a very beautiful rose garden where annually in May a rose festival is held), the
+        Principe Pio Metro Station, the Torrespaña communication tower, the Royal Palace, Almudena
+        Cathedral and the Chapel of San Antonio de la Florida (with its grand pictorial decoration
+        painted by Francisco de Goya). If you see to the other hand, you will see the part of the
+        modern Madrid with the famous 4 Towers buildings.
+    </string>
 
 
 

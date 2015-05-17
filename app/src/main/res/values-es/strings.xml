@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="share">compartir</string>
+    <string name="capture">capturar</string>
+    <string name="congratulations">Felicidades!!</string>
+    <string name="captured_msg">Has capturado </string>
+    <string name="tab_monuments">Monumentos</string>
+    <string name="tab_monument">Monumento</string>
+    <string name="tab_map">Mapa</string>
+
+    <string name="see_more">Captura el monumento para ver más</string>
+
+    <string name="calle_alacala" formatted="false">La calle de Alcalá es una de las principales arterias de Madrid,
+        tanto en tráfico como en actividad comercial. Se extiende casi 10.200 metros desde el centro
+        de Madrid hacia el este-nordeste de la ciudad. Comienza en la Puerta del Sol, en lo que era
+        el km 0 (origen radial de todas las carreteras de España y calles de Madrid), para terminar
+        discurriendo paralela a la Avenida de América, hasta la carretera de Acceso a la Estación
+        de O\'Donnell, hacia la mitad en términos geográficos del distrito de San Blas-Canillejas,
+        en su extremo norte, concretamente en el barrio de Rejas. \n\nA lo largo de su trayecto se
+        encuentran algunos de los edificios y monumentos más emblemáticos de Madrid como son la
+        fuente de Cibeles y la Puerta de Alcalá. La calle fue centro del poder financiero a finales
+        del siglo XIX, siendo denominada jocosamente como la calle de los banqueros.</string>
+
+    <string name="catedral_almudena" formatted="false">  La Santa Iglesia Catedral de santa María la
+        Real de la Almudena es la sede episcopal de la archidiócesis de Madrid, España. Se trata de
+        un edificio de 102 metros de longitud y 69 de altura, construido durante los siglos XIX y XX
+        en una mezcla de diferentes estilos: neoclásico en el exterior, neogótico en el interior y
+        neorrománico en la cripta.
+
+        \n\nEl templo está dedicado a la Virgen María, en su advocación de Nuestra Señora de la Almudena,
+        patrona de la ciudad de Madrid y de la Archidiócesis de Madrid.
+
+        \n\nLa catedral está ubicada en el centro histórico de la ciudad. La fachada principal se
+        encuentra frente al Palacio Real. La fachada del crucero mira hacia la calle de Bailén, y el
+        acceso a la cripta se realiza por la cuesta de la Vega, al final de la calle Mayor.
+        A diferencia de la mayoría de templos cristianos, de orientación este-oeste, la catedral
+        tiene una orientación norte-sur, fruto de su concepción como parte integrante del conjunto
+        del Palacio Real. Está construida en piedra de Novelda (Alicante) y granito de las canteras
+        de Colmenar Viejo (Madrid).
+        </string>
+    <string name="fuente_cibeles">La fuente de Cibeles (más conocida por el pueblo madrileño
+        sencillamente como La Cibeles) se encuentra en la plaza del mismo nombre. Se instaló en 1782
+        en el Salón del Prado, junto al Palacio de Buenavista, de cara a la fuente de Neptuno
+        (actualmente en el centro de la plaza de Cánovas del Castillo, en el Paseo del Prado junto
+        al Palacio de Villahermosa, actual Museo Thyssen-Bornemisza, y al Hotel Palace). Incluye a
+        la diosa Cibeles, símbolo de la Tierra, la agricultura y la fecundidad, sobre un carro tirado
+        por leones.
+
+        \n\nLa actual plaza se llamó al principio Plaza de Madrid y en el año 1900 tomó el nombre
+        plaza de Castelar. En la actualidad está delimitada por los grandes edificios del Palacio de
+        Buenavista (Cuartel General del Ejército), Palacio de Linares (Casa de América), Palacio de
+        Comunicaciones (antes sede de Correos y actualmente de la Alcaldía de Madrid) y Banco de
+        España. Lo curioso es que cada uno de estos monumentos pertenece a un barrio distinto de Madrid.
+
+        \n\nLos encargados de su realización fueron Francisco Gutiérrez (figura de la diosa y el carro),
+        Roberto Michel (los leones) y el adornista Miguel Ximénez, de acuerdo con el diseño de Ventura
+        Rodríguez. La diosa y los leones fueron esculpidos en mármol cárdeno del pueblo de Montesclaros
+        (Toledo), y el resto en piedra de Redueña, localidad enclavada a 53 km al norte de Madrid,
+        cerca de la sierra de La Cabrera.
+
+        \nEl estar enclavada en un lugar tan céntrico, su ajetreada historia, e incluso tradiciones
+        recientes como lugar de celebraciones deportivas de los triunfos del Real Madrid en todas
+        las competiciones han contribuido a que sea uno de los más conocidos símbolos de Madrid a
+        nivel mundial.</string>
+
+    <string name="puerta_alcala">La Puerta de Alcalá es una de las cinco antiguas puertas reales que
+        daban acceso a la ciudad de Madrid. Se encuentra situada en el centro de la rotonda de la
+        Plaza de la Independencia, diseñada por el urbanista Ángel Fernández de los Ríos en el año 1877.
+        En el cruce de las calles de Alcalá, Alfonso XII, Serrano y Salustiano Olózaga, junto a las
+        puertas del Retiro: Puerta de España, Puerta de la Independencia (entrada principal a los
+        jardines del Retiro) y Puerta de Hernani.
+
+        \n\nLa puerta daba acceso a aquellos viajeros que entraban antiguamente a la población desde
+        Francia, Aragón o Cataluña. En la actualidad es una puerta monumental que se encuentra ubicada
+        junto a la Fuente de Cibeles y el Parque del Retiro. Fue construida por mandato de Carlos III
+        en sustitución de otra puerta anterior que existía ya desde el siglo XVI. El diseño y obra
+        pertenece al arquitecto italiano Francesco Sabatini. Compitieron con Sabatini otros proyectos
+        por parte de arquitectos españoles: Ventura Rodríguez y de José de Hermosilla, siendo finalmente
+        elegido personalmente por el Rey el diseño de Sabatini.
+
+        \n\nSe trata de una puerta de estilo neoclásico y aspecto monumental similar a los Arcos de
+        Triunfos romanos, se erigió mirando su exterior a oriente en el año 1778. La puerta ha sido
+        posteriormente restaurada en cinco ocasiones en más de dos siglos de existencia, siendo la
+        última a finales del siglo XX. La originalidad de su fábrica consiste en ser el primer arco
+        de triunfo construido en Europa tras la caída del Imperio romano, siendo precursor de otros
+        como el Arco de Triunfo de París y la Puerta de Brandeburgo en Berlín.
+
+        \n\nHa sufrido desde sus comienzos diversas transformaciones urbanísticas en su entorno.
+        Pasando de ser la frontera exterior de Madrid, a un centro turístico de obligado paso que
+        aparece insertada casi en el medio de la misma ciudad. Este cambio se ha debido al ensanche
+        del siglo XIX a lo largo del barrio de Serrano y la prolongación de la calle de Alcalá.
+        Finalmente es desde 1976 considerado por el Estado Español como un Monumento Histórico-Artístico,
+        extendiendo su categoría a la misma Plaza de la Independencia.
+
+        La puerta ya desde su ubicación final fue adquiriendo desde finales del siglo XVIII relevancia
+        en el pueblo madrileño, y a finales del siglo XIX era ya uno de sus iconos más característicos
+        que aparece en numerosas ilustraciones de la ciudad. Al ser uno de los monumentos más
+        representativos, en su doble condición de mirada hacia el interior de la ciudad y al exterior
+        de la misma. la Puerta de Alcalá ha servido como soporte para todo tipo de manifestaciones
+        políticas y artísticas y en sus inmediaciones se han producido numerosos hechos históricos.</string>
+
+    <string name="templo_debod">El Templo de Debod es un edificio del antiguo Egipto localizado
+        actualmente en Madrid (España). Está situado al oeste de la Plaza de España, junto al Paseo
+        del Pintor Rosales (Parque del Oeste), en un alto donde se encontraba el Cuartel de la Montaña.
+        Al ser trasladado a España, se situó de manera que conservase aproximadamente la misma
+        orientación que en su lugar de origen, de este a oeste.
+
+        \n\nEl Templo de Debod fue un regalo de Egipto a España (año 1968), en compensación por la ayuda
+        española, tras el llamamiento internacional realizado por la Unesco para salvar los templos
+        de Nubia, principalmente el de Abu Simbel, en peligro de desaparición debido a la construcción
+        de la presa de Asuán. Egipto donó cuatro de los templos salvados a distintas naciones
+        colaboradoras: Dendur a los Estados Unidos (se encuentra actualmente en el Metropolitan Museum
+        de Nueva York), Ellesiya a Italia (Museo Egipcio de Turín), Taffa a Holanda (Rijksmuseum van
+        Oudheden de Leiden)2 y Debod a España.
+
+        \n\nTiene una antigüedad de unos 2200 años. Su núcleo más antiguo fue quizás erigido bajo el
+        faraón Ptolomeo IV Filópator, y decorado posteriormente por el rey nubio Adikhalamani de
+        Meroe hacia 200-180 a. C., siendo dedicado a Amón de Debod ("Amani", en idioma kushita)
+        e Isis, aunque a decir verdad la mayoría de los investigadores piensa que su erección fue
+        obra de Adikhalamani, interviniendo posteriormente Ptolomeo IV en él. Posee importantes añadidos
+        de época ptolemaica y romano-imperial (del siglo I a. C. al II d. C.).</string>
+
+    <string name="palacio_real">El Palacio Real de Madrid es la residencia oficial del Rey de España;
+        no obstante, los actuales Reyes no habitan en él, sino en el Palacio de la Zarzuela, por lo
+        que es utilizado para ceremonias de Estado y actos solemnes.
+
+        \n\nCon una extensión de 135 000 m² y 3418 habitaciones, es el palacio real más grande de Europa
+        Occidental.2 Alberga un valioso patrimonio histórico-artístico, destacando el conjunto de
+        instrumentos musicales conocido como los Stradivarius Palatinos, y colecciones muy relevantes
+        de otras disciplinas como pintura, escultura y tapicería. Las salas de Estado y las colecciones
+        artísticas están abiertas a las visitas siempre que no haya actos oficiales.
+
+        \n\nEs conocido también como Palacio de Oriente. Este nombre procede de su ubicación en la Plaza
+        de Oriente, que debe su nombre precisamente por estar en el lado oriental del palacio. A eje
+        con el Palacio, y enfrentado, se encuentra al otro extremo de la plaza el Teatro Real.
+
+        \n\nEl palacio fue construido por orden del rey Felipe V, sobre el solar dejado por el Real
+        Alcázar de Madrid, destruido casi del todo por un incendio en 1734. Tanto los cimentos del
+        antiguo alcázar como alguna de sus estructuras fueron utilizadas para la construcción del
+        nuevo palacio. El episodio del incendio sirvió para justificar la sustitución del viejo
+        edificio por un palacio acorde al gusto de la época. Su construcción comenzó en 1738, según
+        trazas del arquitecto Filippo Juvara, quien proponía un palacio mayor pero en una ubicación
+        diferente. Al morir Juvara, se encomendó el proyecto a su discípulo Juan Bautista Sachetti,
+        a quien se exigió adaptar los planos de Juvara al solar del antiguo Alcázar. Otros
+        distinguidos arquitectos españoles como Ventura Rodríguez participaron y se formaron en la
+        cantera del nuevo palacio, a él se debe la configuración de la Real Capilla.5 Francesco
+        Sabatini se encargó de la conclusión del edificio, así como de obras secundarias de reforma,
+        ampliación y decoración. Carlos III fue el primer monarca que habitó de forma continua
+        el palacio.
+
+        \n\nEl último monarca que vivió en palacio fue Alfonso XIII, aunque Manuel Azaña, presidente de
+        la Segunda República, también habitó en el mismo, siendo por tanto el último Jefe de Estado
+        que lo hizo. Durante ese periodo fue conocido como «Palacio Nacional». Todavía hay una sala,
+        al lado de la Real Capilla, que se conoce por el nombre de «despacho de Azaña».
+
+        \n\nEl interior del palacio destaca por su riqueza artística, tanto en lo que se refiere al uso
+        de toda clase de materiales nobles en su construcción como a la decoración de sus salones
+        con obras de arte de todo tipo, como pinturas de artistas de la importancia de Caravaggio,
+        Velázquez, Francisco de Goya y frescos de Corrado Giaquinto, Giovanni Battista Tiepolo o
+        Anton Raphael Mengs.8 Otras colecciones destacables que se conservan en el edificio son las
+        de la Armería Real, porcelana, relojería, mobiliario y platería.
+
+        \n\nActualmente Patrimonio Nacional, organismo autónomo dependiente del Ministerio de la
+        Presidencia, gestiona los bienes de titularidad pública puestos al servicio de la Corona,
+        entre ellos el Palacio Real.
+    </string> />
+
+    <string name="plaza_mayor">
+        Los orígenes de la plaza se remontan al siglo XVI, cuando en la confluencia de los caminos
+        (hoy en día calles) de Toledo y Atocha, a las afueras de la villa medieval, se celebraba en
+        este sitio, conocido como «plaza del Arrabal», el mercado principal de la villa,
+        construyéndose en esta época una primera casa porticada, o lonja, para regular el comercio
+        en la plaza.
+
+        \n\nEn 1580, tras haber trasladado la corte a Madrid en 1561, Felipe II encargó el proyecto de
+        remodelación de la plaza a Juan de Herrera, comenzándose el derribo de las «casas de manzanas»
+        de la antigua plaza ese mismo año. La construcción del primer edificio de la nueva plaza,
+        la Casa de la Panadería, comenzaría en 1590 a cargo de Diego Sillero, en el solar de la
+        antigua lonja. En 1617, Felipe III, encargó la finalización de las obras a Juan Gómez de Mora,
+        quién concluirá la plaza en 1619.
+
+        \n\nLa plaza Mayor ha sufrido tres grandes incendios en su historia, el primero de ellos en 1631,
+        encargándose el mismo Juan Gómez de Mora de las obras de reconstrucción. El segundo de los
+        incendios ocurrió en 1670 siendo el arquitecto Tomás Román el encargado de la reconstrucción.
+        El último de los incendios, que arrasó un tercio de la plaza, tuvo lugar en 1790, dirigiendo
+        las labores de extinción Sabatini. Se encargó la reconstrucción a Juan de Villanueva, que
+        rebajó la altura del caserío que rodea la plaza de cinco a tres plantas y cerró las esquinas
+        habilitando grandes arcadas para su acceso. Las obras de reconstrucción se prolongarían hasta
+        1854, continuándolas, tras la muerte de Villanueva, sus discípulos Antonio López Aguado y
+        Custodio Moreno.
+
+        \n\nEn 1848, se colocó la estatua ecuestre de Felipe III en el centro de la plaza, obra de Juan
+        de Bolonia y Pietro Tacca que data de 1616.
+
+        \n\nEn 1880, se restauró la Casa de la Panadería, encargándose Joaquín María de la Vega del
+        proyecto. En 1921 se reformó el caserío, trabajo a cargo de Oriol. En 1935 se realizó otra
+        reforma, llevada a cabo por Fernando García de Mercadal. Y en los años 60 se acometió una
+        restauración general, que la cerró al tráfico rodado y habilitó un aparcamiento subterráneo
+        bajo la plaza. La última de las actuaciones en la plaza Mayor, llevada a cabo en 1992,
+        consistió en la decoración mural, obra de Carlos Franco, de la Casa de la Panadería, que
+        representa personajes mitológicos como la diosa Cibeles.
+    </string>
+
+    <string name="retiro">
+        \n\nLos jardines tienen su origen entre los años 1631 y 1640, cuando el Conde-Duque de Olivares
+        (Gaspar de Guzmán y Pimentel), valido del rey Felipe IV (1621–1665), le regaló al Rey unos
+        terrenos que le habían sido cedidos por el duque de Fernán Núñez para el recreo de la Corte
+        en torno al Monasterio de los Jerónimos de Madrid. Así, con la reforma del Cuarto Real que
+        había junto al monasterio, se inició la construcción del Palacio del Buen Retiro. Contaba
+        entonces con unas 145 hectáreas. Aunque esta segunda residencia real iba a estar en lo que
+        en aquellos tiempos eran las afueras de la villa de Madrid, no estaba excesivamente lejos
+        del Real Alcázar y resultó ser un lugar muy agradable, por estar en una zona muy boscosa
+        y fresca.
+
+        \n\nBajo la dirección de los arquitectos Giovanni Battista Crescenzi y Alonso Carbonell se
+        construyeron diversos edificios, entre ellos el Teatro del Buen Retiro, que acogió
+        representaciones de los dramaturgos españoles del Siglo de Oro, entre ellos Calderón de la
+        Barca y Lope de Vega. Perduran aún el Casón del Buen Retiro, antiguo Salón de Baile con
+        frescos de Lucas Jordán, y el llamado Salón de Reinos, un ala del Palacio del Buen Retiro
+        decorado antaño con pinturas de Velázquez y Zurbarán, entre otros; y los jardines de la
+        posesión real.
+
+        \n\nÉstos se formaron al mismo tiempo que el palacio, trabajando en ellos, entre otros, Cosme
+        Lotti, escenógrafo del Gran Duque de Toscana, y edificándose una leonera para la exhibición
+        de animales salvajes y una pajarera de aves exóticas. El Estanque grande, escenario de
+        naumaquias y espectáculos acuáticos, el Estanque ochavado o de las campanillas y la Ría
+        chica pertenecen a este período inicial.
+
+        \n\nA lo largo de la historia, el conjunto sufrió modificaciones, no siempre planificadas, que
+        cambiaron la fisonomía del jardín, como el Parterre, diseñado durante el reinado de Felipe V
+        (1700–1746), la Real Fábrica de Porcelana del Buen Retiro en tiempos de Carlos III (1759–1788)
+        o el Observatorio Astronómico, obra de Juan de Villanueva, reinando Carlos IV (1788–1808).
+        El rey Carlos III fue el primero en permitir el acceso de los ciudadanos al recinto, siempre
+        que cumpliesen con la condición de ir bien aseados y vestidos.
+
+        \n\nDurante la invasión francesa, en 1808, los jardines quedaron parcialmente destruidos al ser
+        utilizados como fortificación por las tropas de Napoleón. El palacio fue casi totalmente
+        destruido.
+    </string>
+
+    <string name="sol">
+        La Puerta del Sol es una plaza de Madrid (España). Aquí se encuentra desde 1950 el denominado
+        Kilómetro Cero de las carreteras radiales españolas. El edificio más antiguo de la Puerta
+        del Sol es la Casa de Correos y en ella destaca el reloj de torre que fue construido y donado
+        en el siglo XIX por José Rodríguez de Losada, y cuyas campanadas de las 12 de la noche del
+        31 de diciembre marcan la tradicional toma de las doce uvas a la gran mayoría de los españoles.
+        Dichas campanadas se empezaron a televisar el 31 de diciembre de 1962 en La 1 de TVE, a partir
+        de ese año no se ha dejado de retransmitir por diversos canales de televisión de España.
+        La Puerta del Sol es un lugar de cita, un lugar de paso entre diversas partes de Madrid.
+        Es visita turística obligada de aquellos que se acercan a Madrid.
+    </string>
+
+    <string name="palacio_comunicaciones">El Palacio de Comunicaciones (denominado también Palacio
+        de Telecomunicaciones y desde 2011, Palacio de Cibeles) es un conjunto integrado por dos
+        edificios de fachada blanca ubicados en uno de los centros del Madrid histórico. Se erigen
+        en un lateral de la plaza de Cibeles y ocupan alrededor de 30 000 metros cuadrados de lo que
+        fueron los antiguos Jardines del Buen Retiro.3 La elección del sitio generó cierta polémica
+        en su época por privar a Madrid de un lugar de recreo.4 La primera piedra del edificio se
+        colocó en el año 1907 y se inauguraría oficialmente el 14 de marzo de 1919, comenzando su
+        funcionamiento como moderna central de distribución de correos, telégrafos y teléfonos.
+        Tras algunas evoluciones arquitectónicas del exterior del edificio —como la ampliación en
+        dos pisos hacia la calle y pasaje de Montalbán— ya en el año 2007 comenzó a albergar las
+        dependencias municipales del Ayuntamiento de Madrid, trasladando sus dependencias desde la
+        Casa de la Villa y Casa de Cisneros, ambas ubicadas en la Plaza de la Villa. Esta reforma de
+        comienzos del siglo XXI en el edificio incluyó además un área cultural denominada "CentroCentro".
+
+        \n\nEl conjunto es desde el punto de vista de la arquitectura española uno de los primeros
+        ejemplos de arquitectura modernista, y más representativos, erigidos en el centro de Madrid.
+        De fachada con evocaciones neoplaterescas y barroco salmantino. El edificio, mediante
+        concurso municipal, fue diseñado por los jóvenes arquitectos españoles Antonio Palacios y
+        Joaquín Otamendi como sede para la Sociedad de Correos y Telégrafos de España, estos fueron
+        autores también de los proyectos del puente de Bilbao, casino de Madrid y puente de San
+        Sebastián. Este trabajo fue el inicio de la fulgurante carrera constructiva de ambos arquitectos.
+        Los motivos decorativos de la fachada y del interior fueron realizados por el escultor
+        romántico Ángel García Díaz, colaborador habitual de Antonio Palacios.8 Uno de los objetivos
+        del diseño era la construcción de «un edificio para el público».
+
+        Los edificios, tras su edificación y debido a su funcionamiento normal, fueron acusando poco
+        a poco la modificaciones realizadas, con lo que se realizaron nuevas reformas realizadas
+        para la mejora de los sistemas de comunicación. De esta forma se llevaron a cabo
+        modificaciones en ambos edificios en la década de los 60, dirigidas por Alejandro de la Sota
+        y trabajos de reparación y reformas realizadas entre 1980 y 1992 por Antonio de Sala-Navarro
+        y Reverter. El declive del uso del correo postal a finales del siglo XX fue haciendo poco
+        a poco mella en las funciones del conjunto de edificios, como consecuencia fue perdiendo
+        protagonismo. En 1993 fue declarado Bien de Interés Cultural, con categoría de Monumento.
+        A comienzos del siglo XXI se incorporó al patrimonio municipal y se convirtió en centro cultural
+        y sede del Ayuntamiento de Madrid.</string>
+    <string name="teatro">
+        El Teatro Real es el teatro de la ópera de Madrid y está considerado uno de los más
+        importantes de España y de Europa. Se encuentra situado en la Plaza de Oriente, frente al
+        Palacio Real, y es uno de los monumentos más emblemáticos de la ciudad.
+
+        \n\nFue inaugurado en 1850, funcionando de forma ininterrumpida como teatro de ópera hasta 1925,
+        cuando tuvo que cerrar a causa de problemas estructurales en el edificio. No volvió a abrir
+        sus puertas hasta 1966, como sala de conciertos sinfónicos. Entre 1988 y 1997 sufrió una
+        importante remodelación que lo volvió a convertir en coliseo operístico.
+    </string>
+    <string name="teleferico">
+        El Teleférico de Madrid comienza en el paseo del Pintor Rosales y termina en la Casa de Campo.
+        En su trayecto sobrevuela la rosaleda del Parque del Oeste, la estación de cercanías de
+        Príncipe Pío, la ermita de San Antonio de la Florida y el río Manzanares y termina junto a
+        la plaza de los Pasos Perdidos de la Casa de Campo (cerro Garabitas). En esta terminal hay
+        un restaurante-cafetería y un aparcamiento para automóviles y en la del paseo de Rosales
+        otro aparcamiento, con 350 plazas, y un restaurante, El Balcón de Rosales, explotado por la
+        misma empresa propietaria del teleférico.
+    </string>
+</resources>

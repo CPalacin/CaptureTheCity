@@ -42,6 +42,7 @@ public class FragmentCityList extends BasicFragment implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Log.i("FragmentCityList", "onItemClick. position: "+position);
         Monument monument= MonumentList.getList().get(position);
         monumentActivity.setCurrentMonumentId(monument.getName());
         monumentActivity.switchToDetailAdapter();

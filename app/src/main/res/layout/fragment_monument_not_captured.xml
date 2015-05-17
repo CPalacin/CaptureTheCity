@@ -52,12 +52,22 @@
                 android:layout_marginTop="-5dp"
                 android:paddingLeft="25dp"
                 android:paddingRight="20dp"
-                android:paddingBottom="20dp"
+                android:paddingBottom="7dp"
                 android:textSize="17sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/background_floating_material_dark"
-                android:text="Esta es una breve descripcion. No tenemos mucha idea de que vamos a poner aqui,pero al menos deberia de ocupar unas cuantas lineas y dejar al usuarion intrigado sobre el monumento. Bueno me estoy quedando din ideas de palabras que poner asi que le voy a decir a Blanca que me diga algo y lo escribo por aqui. Que si te digo algo de que? de algo silencio que diferencia hay entre..."/>
+                android:textColor="@color/background_floating_material_dark"/>
+
+            <TextView
+                android:id="@+id/unlock"
+                android:textSize="19sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/listColor"
+                android:text="@string/see_more"/>
+
         </LinearLayout>
     </ScrollView>
 

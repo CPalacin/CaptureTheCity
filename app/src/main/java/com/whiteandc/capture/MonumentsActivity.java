@@ -42,7 +42,15 @@ public class MonumentsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monuments);
         toolbarCreation();
+        createViewPager();
 
+        MonumentLoader.loadMonuments(getPreferences(MODE_PRIVATE), this);
+
+        currentMonumentId = MonumentList.getList().get(0).getName();
+        switchToListAdapter();
+    }
+
+    private void createViewPager() {
         // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles fot the Tabs and Number Of Tabs.
         CharSequence[] titles = new CharSequence[]{getResources().getString(R.string.tab_monuments), getResources().getString(R.string.tab_map)};
         adapter = new ViewPagerAdapterTabs(getFragmentManager(), titles, titles.length);
@@ -65,9 +73,6 @@ public class MonumentsActivity extends ActionBarActivity {
 
         // Setting the ViewPager For the SlidingTabsLayout
         tabs.setViewPager(pager);
-
-        MonumentLoader.loadMonuments(getPreferences(MODE_PRIVATE));
-        switchToListAdapter();
     }
 
     private void toolbarCreation() {
@@ -116,16 +121,16 @@ public class MonumentsActivity extends ActionBarActivity {
     }
 
     private void switchToAdapter(Fragment leftFragment, Fragment rightFragment){
-        Log.i(CLASS, "switchToAdapter: "+leftFragment.getClass().getSimpleName());
-        if(backPressedListener instanceof Fragment) {
-            getFragmentManager().beginTransaction().remove((Fragment) backPressedListener).commit();
-        }
-        tabs.setVisibility(View.VISIBLE);
-        pager.setVisibility(View.VISIBLE);
+        Log.i(CLASS, "switchToAdapter: " + leftFragment.getClass().getSimpleName());
+
         backPressedListener = adapter;
         adapter.deleteFragments();
         adapter.setFragments(leftFragment, rightFragment);
-        adapter.setTitles(new CharSequence[]{getResources().getString(R.string.tab_monument), getResources().getString(R.string.tab_map)});
+        final String leftTag =
+                getResources().getString((leftFragment instanceof FragmentCityList)?
+                        R.string.tab_monuments : R.string.tab_monument);
+
+        adapter.setTitles(new CharSequence[]{leftTag, getResources().getString(R.string.tab_map)});
         tabs.updateTextTitles();
         pager.setAdapter(adapter);
     }
@@ -172,14 +177,18 @@ public class MonumentsActivity extends ActionBarActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.i(CLASS, "result: "+requestCode+"  "+resultCode);
+        Log.i(CLASS, "result: " + requestCode + "  " + resultCode);
         if(requestCode == CAMERA_REQUEST_CODE){
             currentMonumentId = data.getStringExtra(Assets.MONUMENT_ID);
             if(resultCode == RESULT_OK){
                 Log.i(CLASS, "ok!");
                 showCustomWebView();
                 SharedPreferences.Editor editor = getPreferences(MODE_PRIVATE).edit();
-                editor.putString(currentMonumentId, "true");
+                Log.i(CLASS, "Set key "+ currentMonumentId+" to true");
+                editor.putBoolean(currentMonumentId, true);
+                editor.apply();
+                Monument monument = MonumentList.getMonument(currentMonumentId);
+                monument.setIsCaptured(true);
             }else if(resultCode == RESULT_CANCELED){
                 Log.i(CLASS, "cancelled!");
             }
@@ -195,6 +204,11 @@ public class MonumentsActivity extends ActionBarActivity {
                 .content(getString(R.string.captured_msg) + " " + currentMonumentId)
                 .positiveText(R.string.ok)
                 .show();
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
     }
 
     public interface OnBackPressedListener {

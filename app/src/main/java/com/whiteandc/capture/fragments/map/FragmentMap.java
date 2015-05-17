@@ -13,6 +13,7 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.whiteandc.capture.R;
 import com.whiteandc.capture.data.MonumentList;
 import com.whiteandc.capture.data.MonumentLoader;
 
@@ -36,19 +37,19 @@ public class FragmentMap extends MapFragment {
         return view;
     }
 
-    private void addMarkers(GoogleMap map) {
-        addOneMarker(map, MonumentLoader.FUENTE_CIBELES);
-        addOneMarker(map, MonumentLoader.PUERTA_ALCALA);
-        addOneMarker(map, MonumentLoader.CALLE_ALCALA);
-        addOneMarker(map, MonumentLoader.CATEDRAL_ALMUDENA);
-        addOneMarker(map, MonumentLoader.TEMPLO_DEBOD);
-        addOneMarker(map, MonumentLoader.PALACIO_REAL);
-        addOneMarker(map, MonumentLoader.PLAZA_MAYOR);
-        addOneMarker(map, MonumentLoader.RETIRO);
-        addOneMarker(map, MonumentLoader.SOL);
-        addOneMarker(map, MonumentLoader.PALACIO_COMU);
-        addOneMarker(map, MonumentLoader.TEATRO);
-        addOneMarker(map, MonumentLoader.TELEFERICO);
+    private void addMarkers(GoogleMap map) { //TODO maybe we can iterate over the list
+        addOneMarker(map, getResources().getString(R.string.title_fuente_cibeles));
+        addOneMarker(map, getResources().getString(R.string.title_puerta_alcala));
+        addOneMarker(map, getResources().getString(R.string.title_calle_alcala));
+        addOneMarker(map, getResources().getString(R.string.title_cat_almudena));
+        addOneMarker(map, getResources().getString(R.string.title_templo_debod));
+        addOneMarker(map, getResources().getString(R.string.title_palacio_real));
+        addOneMarker(map, getResources().getString(R.string.title_plaza_mayor));
+        addOneMarker(map, getResources().getString(R.string.title_retiro));
+        addOneMarker(map, getResources().getString(R.string.title_sol));
+        addOneMarker(map, getResources().getString(R.string.title_palacion_com));
+        addOneMarker(map, getResources().getString(R.string.title_teatro));
+        addOneMarker(map, getResources().getString(R.string.title_teleferico));
     }
 
     private void addOneMarker(GoogleMap map, String monument) {

@@ -4,6 +4,7 @@ package com.whiteandc.capture.tabs;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.support.v13.app.FragmentPagerAdapter;
+import android.util.Log;
 
 import com.whiteandc.capture.MonumentsActivity;
 import com.whiteandc.capture.fragments.notcaptured.FragmentNotCaptured;
@@ -55,9 +56,11 @@ public class ViewPagerAdapterTabs extends FragmentPagerAdapter implements Monume
 
     public void deleteFragments() {
         if(fragmentLeft != null) {
+            Log.i("ViewPagerAdapterTabs", "removed fragment: "+fragmentLeft);
             fragmentManager.beginTransaction().remove(fragmentLeft).commit();
         }
         if(fragmentRight != null) {
+            Log.i("ViewPagerAdapterTabs", "removed fragment: "+fragmentRight);
             fragmentManager.beginTransaction().remove(fragmentRight).commit();
         }
     }
