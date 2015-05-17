@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'keyformarket'
             keyPassword 'linda8noes'
-            storeFile file('C:/Users/crubio/Dropbox/Compartir/air hockey/keyformarket/keyformarket')
+            storeFile file('C:/Users/Carlos/Dropbox/Compartir/air hockey/keyformarket/keyformarket')
             storePassword 'linda8noes'
         }
     }

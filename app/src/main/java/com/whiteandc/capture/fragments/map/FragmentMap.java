@@ -28,12 +28,12 @@ public class FragmentMap extends MapFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = super.onCreateView(inflater, container, savedInstanceState);
-        GoogleMap map= getMap();
+        GoogleMap googleMap= getMap();
 
-        addMarkers(map);
+        addMarkers(googleMap);
 
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID, 12));
-        //map.animateCamera(CameraUpdateFactory.zoomTo(15), 2000, null);
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID, 14));
+        //googleMap.animateCamera(CameraUpdateFactory.zoomTo(15), 2000, null);
         return view;
     }
 
