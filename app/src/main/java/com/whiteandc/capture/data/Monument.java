@@ -15,14 +15,14 @@ public class Monument implements Comparable{
     private LatLng latLng= null;
     private Drawable mainPicture = null;
 
-	public Monument(String name, int[] photoList, boolean captured, String capturedImage, LatLng latLng, String description){
+	public Monument(String name, int[] photoList, boolean captured, String capturedImage, LatLng latLng, String description, Drawable mainPicture){
 		this.name= name;
 		this.photos= photoList;
 		this.captured= captured;
 		this.capturedImg= capturedImage;
         this.description = description;
-		capturedImg= capturedImage;
         this.latLng= latLng;
+		this.mainPicture = mainPicture;
 	}
 
 	public String getName() {

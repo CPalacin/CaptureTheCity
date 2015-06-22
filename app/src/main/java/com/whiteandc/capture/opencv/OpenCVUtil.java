@@ -31,7 +31,7 @@ import java.util.List;
 public class OpenCVUtil {
 
 	private static final float MIN_DIST = 34;
-	private static final float MIN_GOOD_MATCHES = 3;
+	private static final float MIN_GOOD_MATCHES = 4;
 	private static String CLASS = "OpenCVUtil"; 
 	static {
 	    if (!OpenCVLoader.initDebug()) {}

@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -21,18 +22,15 @@ import com.whiteandc.capture.data.MonumentLoader;
 /**
  * Created by Blanca on 21-01-2015.
  */
-public class FragmentMap extends MapFragment {
+public class FragmentMap extends MapFragment implements OnMapReadyCallback {
 
     static final LatLng MADRID = new LatLng(40.427505, -3.705286);
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = super.onCreateView(inflater, container, savedInstanceState);
-        GoogleMap googleMap= getMap();
+        getMapAsync(this);
 
-        addMarkers(googleMap);
-
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID, 14));
         //googleMap.animateCamera(CameraUpdateFactory.zoomTo(15), 2000, null);
         return view;
     }
@@ -59,4 +57,10 @@ public class FragmentMap extends MapFragment {
     }
 
 
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        addMarkers(googleMap);
+
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID, 14));
+    }
 }

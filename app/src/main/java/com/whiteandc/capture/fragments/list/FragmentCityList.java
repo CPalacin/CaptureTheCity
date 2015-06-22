@@ -36,7 +36,9 @@ public class FragmentCityList extends BasicFragment implements AdapterView.OnIte
         list.setAdapter(adapter);
         list.setOnItemClickListener(this);
 
-        monumentActivity.setToolbarTitle(MonumentList.getCityName());
+        int capturedPercentage = MonumentList.calculatePercentage();
+        monumentActivity.setToolbarTitle(MonumentList.getCityName() + " " + capturedPercentage + "%");
+
 		return rootView;
 	}
 

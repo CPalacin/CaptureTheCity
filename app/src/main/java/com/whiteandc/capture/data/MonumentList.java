@@ -34,7 +34,6 @@ public class MonumentList {
 		return monumentList.get(name);
 	}
 
-
     public static String getCityName() {
         return cityName;
     }
@@ -42,6 +41,24 @@ public class MonumentList {
     public static void setCityName(String cityName) {
         MonumentList.cityName = cityName;
     }
+
+	public static int calculatePercentage(){
+		ArrayList<Monument> list = new ArrayList<Monument>(monumentList.values());
+		int capturedMonuments = 0;
+
+		for(Monument monument : list){
+			if(monument.isCaptured()){
+				capturedMonuments++;
+			}
+		}
+
+        int percentage = 0;
+        if(list.size() != 0){
+            percentage = (100 * capturedMonuments) / list.size();
+        }
+
+		return percentage;
+	}
 
 }
 

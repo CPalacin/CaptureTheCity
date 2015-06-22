@@ -1,8 +1,10 @@
 package com.whiteandc.capture.data;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 
 import com.google.android.gms.maps.model.LatLng;
@@ -15,39 +17,39 @@ public class MonumentLoader {
     private static final String CLASS = "MonumentLoader";
 
     public static void loadMonuments(SharedPreferences sharedpreferences, Activity activity) {
-
+        //37.805394, -122.427211
         addMonument(sharedpreferences, resToString(R.string.title_fuente_cibeles, activity),
-                new int[]{R.drawable.cibeles_480, R.drawable.test1}, new LatLng(40.419385, -3.692996),
-                resToString(R.string.fuente_cibeles, activity));
+                new int[]{R.drawable.cibeles_480}, new LatLng(40.419385, -3.692996),
+                resToString(R.string.fuente_cibeles, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_puerta_alcala, activity),
                 new int[]{R.drawable.alcala2}, new LatLng(40.419992, -3.688640),
-                resToString(R.string.puerta_alcala, activity));
+                resToString(R.string.puerta_alcala, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_calle_alcala, activity),
                 new int[]{R.drawable.calle_alcala}, new LatLng(40.418659, -3.697051),
-                resToString(R.string.calle_alacala, activity));
+                resToString(R.string.calle_alacala, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_cat_almudena, activity),
                 new int[]{R.drawable.catedral_almudena},
                 new LatLng(40.415621, -3.714648),
-                resToString(R.string.catedral_almudena, activity));
+                resToString(R.string.catedral_almudena, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_templo_debod, activity),
                 new int[]{R.drawable.templo_debod}, new LatLng(40.424034, -3.717801),
-                resToString(R.string.templo_debod, activity));
+                resToString(R.string.templo_debod, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_palacio_real, activity),
                 new int[]{R.drawable.palacio_real, R.drawable.palacio_real1,
                         R.drawable.palacio_real2, R.drawable.palacio_real3,
                         R.drawable.palacio_real4},
-                new LatLng(40.417967, -3.714291), resToString(R.string.palacio_real, activity));
+                new LatLng(40.417967, -3.714291), resToString(R.string.palacio_real, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_plaza_mayor, activity),
                 new int[]{R.drawable.plaza_mayor, R.drawable.plaza_mayor1,
                         R.drawable.plaza_mayor2, R.drawable.plaza_mayor3,
                         R.drawable.plaza_mayor4, R.drawable.plaza_mayor5},
-                new LatLng(40.415520, -3.707417), resToString(R.string.plaza_mayor, activity));
+                new LatLng(40.415520, -3.707417), resToString(R.string.plaza_mayor, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_retiro, activity),
                 new int[]{R.drawable.retiro, R.drawable.retiro1,
@@ -58,7 +60,7 @@ public class MonumentLoader {
                         R.drawable.retiro10, R.drawable.retiro11,
                         R.drawable.retiro12, R.drawable.retiro13,
                         R.drawable.retiro14},
-                new LatLng(40.415249, -3.684521), resToString(R.string.retiro, activity));
+                new LatLng(40.415249, -3.684521), resToString(R.string.retiro, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_sol, activity),
                 new int[]{R.drawable.puerta_del_sol, R.drawable.puerta_del_sol1,
@@ -66,14 +68,14 @@ public class MonumentLoader {
                         R.drawable.puerta_del_sol4, R.drawable.puerta_del_sol5,
                         R.drawable.puerta_del_sol6, R.drawable.puerta_del_sol7,
                         R.drawable.puerta_del_sol8},
-                new LatLng(40.416935, -3.703539), resToString(R.string.sol, activity));
+                new LatLng(40.416935, -3.703539), resToString(R.string.sol, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_palacion_com, activity),
                 new int[]{R.drawable.palacio_de_comunicaciones, R.drawable.palacio_de_comunicaciones1,
                         R.drawable.palacio_de_comunicaciones2, R.drawable.palacio_de_comunicaciones3,
                         R.drawable.palacio_de_comunicaciones4, R.drawable.palacio_de_comunicaciones5,
                         R.drawable.palacio_de_comunicaciones6, R.drawable.palacio_de_comunicaciones7},
-                new LatLng(40.418891, -3.692039), resToString(R.string.palacio_comunicaciones, activity));
+                new LatLng(40.418891, -3.692039), resToString(R.string.palacio_comunicaciones, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_teatro, activity),
                 new int[]{R.drawable.teatro_real, R.drawable.teatro_real1,
@@ -81,17 +83,17 @@ public class MonumentLoader {
                         R.drawable.teatro_real4, R.drawable.teatro_real5,
                         R.drawable.teatro_real6, R.drawable.teatro_real7,
                         R.drawable.teatro_real8},
-                new LatLng(40.418450, -3.710599), resToString(R.string.teatro, activity));
+                new LatLng(40.418450, -3.710599), resToString(R.string.teatro, activity), activity);
 
         addMonument(sharedpreferences, resToString(R.string.title_teleferico, activity),
                 new int[]{R.drawable.teleferico, R.drawable.teleferico1,
                         R.drawable.teleferico3, R.drawable.teleferico4},
-                new LatLng(40.425269, -3.717168), resToString(R.string.teleferico, activity));
+                new LatLng(40.425269, -3.717168), resToString(R.string.teleferico, activity), activity);
 
         //addMonument(sharedpreferences, "Test", new int[]{R.drawable.test1,R.drawable.test2});
     }
 
-    private static void addMonument(SharedPreferences sharedpreferences, String name, int[] photos, LatLng latLng, String description) {
+    private static void addMonument(SharedPreferences sharedpreferences, String name, int[] photos, LatLng latLng, String description, Context context) {
         boolean captured = false;
         if (sharedpreferences.contains(name)) {
             Log.i(CLASS, "Obteniendo valor de key: " + name);
@@ -103,7 +105,8 @@ public class MonumentLoader {
             editor.apply();
         }
         Log.i(CLASS, "Anadiendo a la lista monumento: " + name + ((captured) ? " capturado" : " NO capturado"));
-        MonumentList.addItem(new Monument(name, photos, captured, "IMG_20140603_201814.jpg", latLng, description));
+        Drawable image = context.getResources().getDrawable(photos[0]);
+        MonumentList.addItem(new Monument(name, photos, captured, "IMG_20140603_201814.jpg", latLng, description, image));
     }
 
     private static String resToString(int res, Activity activity) {

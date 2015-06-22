@@ -1,8 +1,13 @@
 package com.whiteandc.capture;
 
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.content.SharedPreferences;
+import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
@@ -15,6 +20,12 @@ import android.view.WindowManager;
 import android.widget.TextView;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
 import com.whiteandc.capture.data.Monument;
 import com.whiteandc.capture.data.MonumentList;
 import com.whiteandc.capture.data.MonumentLoader;
@@ -25,10 +36,12 @@ import com.whiteandc.capture.fragments.notcaptured.FragmentNotCaptured;
 import com.whiteandc.capture.tabs.SlidingTabLayout;
 import com.whiteandc.capture.tabs.ViewPagerAdapterTabs;
 
-public class MonumentsActivity extends ActionBarActivity {
+public class MonumentsActivity extends ActionBarActivity implements LocationListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
 
     private static final String CLASS = "MonumentsActivity";
     private static final int CAMERA_REQUEST_CODE = 10000;
+    private static final int REQUEST_RESOLVE_ERROR = 10010;
+    private static final String DIALOG_ERROR = "dialog_error";
 
     private Toolbar toolbar;
     private String currentMonumentId;
@@ -36,6 +49,11 @@ public class MonumentsActivity extends ActionBarActivity {
     private ViewPagerAdapterTabs adapter;
     private SlidingTabLayout tabs;
     private OnBackPressedListener backPressedListener;
+    private LocationUpdateListener locationUpdateListener;
+
+    private GoogleApiClient mGoogleApiClient;
+    private boolean mResolvingError = false;
+    private Location mLastLocation;
 
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +63,8 @@ public class MonumentsActivity extends ActionBarActivity {
         createViewPager();
 
         MonumentLoader.loadMonuments(getPreferences(MODE_PRIVATE), this);
+
+        buildGoogleApiClient();
 
         currentMonumentId = MonumentList.getList().get(0).getName();
         switchToListAdapter();
@@ -117,7 +137,9 @@ public class MonumentsActivity extends ActionBarActivity {
     }
 
     public void switchToDetailAdapter() {
-        switchToAdapter(new FragmentNotCaptured(), new FragmentMapDetail());
+        final FragmentMapDetail mapDetail = new FragmentMapDetail();
+        locationUpdateListener = mapDetail;
+        switchToAdapter(new FragmentNotCaptured(), mapDetail);
     }
 
     private void switchToAdapter(Fragment leftFragment, Fragment rightFragment){
@@ -209,6 +231,123 @@ public class MonumentsActivity extends ActionBarActivity {
     @Override
     public void onResume(){
         super.onResume();
+    }
+
+    protected synchronized void buildGoogleApiClient() {
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(LocationServices.API)
+                .build();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (!mResolvingError) {  // more about this later
+            mGoogleApiClient.connect();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        mGoogleApiClient.disconnect();
+        super.onStop();
+    }
+
+    public Location getLastLocation(){
+        return mLastLocation;
+    }
+
+    @Override
+    public void onConnected(Bundle connectionHint) {
+        mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
+                mGoogleApiClient);
+        Log.i(CLASS, "mLastLocation: " + mLastLocation);
+
+        LocationServices.FusedLocationApi.requestLocationUpdates(
+                mGoogleApiClient, createLocationRequest(), this);
+    }
+
+    protected LocationRequest createLocationRequest() {
+        LocationRequest mLocationRequest = new LocationRequest();
+        mLocationRequest.setInterval(10000);
+        mLocationRequest.setFastestInterval(5000);
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        return mLocationRequest;
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
+
+    @Override
+    public void onConnectionFailed(ConnectionResult result) {
+        if (mResolvingError) {
+            // Already attempting to resolve an error.
+            return;
+        } else if (result.hasResolution()) {
+            try {
+                mResolvingError = true;
+                result.startResolutionForResult(this, REQUEST_RESOLVE_ERROR);
+            } catch (IntentSender.SendIntentException e) {
+                // There was an error with the resolution intent. Try again.
+                mGoogleApiClient.connect();
+            }
+        } else {
+            // Show dialog using GooglePlayServicesUtil.getErrorDialog()
+            showErrorDialog(result.getErrorCode());
+            mResolvingError = true;
+        }
+    }
+
+
+    /* Creates a dialog for an error message */
+    private void showErrorDialog(int errorCode) {
+        // Create a fragment for the error dialog
+        ErrorDialogFragment dialogFragment = new ErrorDialogFragment();
+        // Pass the error that should be displayed
+        Bundle args = new Bundle();
+        args.putInt(DIALOG_ERROR, errorCode);
+        dialogFragment.setArguments(args);
+        dialogFragment.show(getFragmentManager(), "errordialog");
+    }
+
+    /* Called from ErrorDialogFragment when the dialog is dismissed. */
+    public void onDialogDismissed() {
+        mResolvingError = false;
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        Log.i(CLASS, "onLocationChanged: " + mLastLocation);
+        mLastLocation = location;
+        if(locationUpdateListener != null) {
+            locationUpdateListener.onLocationChanged(mLastLocation);
+        }
+    }
+
+    /* A fragment to display an error dialog */
+    public static class ErrorDialogFragment extends DialogFragment {
+        public ErrorDialogFragment() { }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            // Get the error code and retrieve the appropriate dialog
+            int errorCode = this.getArguments().getInt(DIALOG_ERROR);
+            return GooglePlayServicesUtil.getErrorDialog(errorCode,
+                    this.getActivity(), REQUEST_RESOLVE_ERROR);
+        }
+
+        @Override
+        public void onDismiss(DialogInterface dialog) {
+            ((MonumentsActivity)getActivity()).onDialogDismissed();
+        }
+    }
+
+    public interface LocationUpdateListener {
+        public void onLocationChanged(Location location);
     }
 
     public interface OnBackPressedListener {

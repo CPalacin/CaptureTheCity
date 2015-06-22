@@ -3,12 +3,12 @@
     xmlns:capture="http://schemas.android.com/apk/res-auto"
     tools:context="com.whiteandc.capture.MonumentsActivity">
 
-    <item
+   <!-- <item
         android:id="@+id/share"
         android:title="@string/share"
         android:orderInCategory="200"
         android:icon="@drawable/share_white"
         capture:showAsAction="ifRoom"/>
-
+-->
 
 </menu>
